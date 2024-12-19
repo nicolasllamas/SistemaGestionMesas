@@ -5,8 +5,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var drinkList = Generator.CreateDrinkList();
-        var menuList = Generator.CreateMenuList();
+        List<Product> drinkList = Generator.CreateDrinkList(); // se crean las listas de productos y menus
+        List<Menu> menuList = Generator.CreateMenuList();
         Dictionary<int, List<Product>> productByTable = new Dictionary<int, List<Product>>();
         int numberOfTables = 6; // se deja como variable por posibles futuros cambios
         for (int i = 1; i <= numberOfTables; i++) { productByTable[i] = new List<Product>(); }
