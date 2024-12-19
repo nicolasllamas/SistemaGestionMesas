@@ -21,7 +21,7 @@ public class Program
             Console.WriteLine("3) Consultar los productos de cada mesa");
             Console.WriteLine("4) Liberar una mesa");
             Console.WriteLine("5) Cerrar el programa");
-            int selector = HelperValidInt.GetValidInt(1, 4);
+            int selector = HelperValidInt.GetValidInt(1, 5);
 
             switch (selector)
             {
@@ -44,6 +44,5 @@ public class Program
             }
         }
     }
-
 }
 
